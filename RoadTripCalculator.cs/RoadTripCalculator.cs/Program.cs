@@ -14,8 +14,21 @@ namespace RoadTripCalculator.cs
 {
     internal class Program
     {
+        // Constant fuel efficiencies
+        const double YOUR_FUEL_EFFICIENCY = 11.9;
+        const double FRIEND_FUEL_EFFICIENCY = 8.7;
+
         static void Main(string[] args)
         {
+            //Declare Variables
+            int distanceKm;
+            string vehicleChoice;
+            double fuelEfficiency;
+            double fuelUsed;
+            double fuelCost;
+            int foodCost;
+            double totalCost;
+            string again;
         }
     }
 }
