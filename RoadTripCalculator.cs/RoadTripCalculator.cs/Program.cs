@@ -46,7 +46,21 @@ namespace RoadTripCalculator.cs
                     Console.Write("Enter trip distance in km: ");
                     distanceKm = int.Parse(Console.ReadLine());
 
-                    
-        }
+                    // Ask which vehicle will be used
+                    Console.Write("Use your car or your friend's? (y/f): ");
+                    vehicleChoice = Console.ReadLine();
+
+                    // Determine fuel efficiency
+                    if (vehicleChoice == "y")
+                    {
+                        fuelEfficiency = YOUR_FUEL_EFFICIENCY;
+                    }
+                    else
+                    {
+                        fuelEfficiency = FRIEND_FUEL_EFFICIENCY;
+                    }
+
+
+                }
     }
 }
