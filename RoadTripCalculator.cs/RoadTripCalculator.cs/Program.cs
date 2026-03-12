@@ -84,6 +84,11 @@ namespace RoadTripCalculator.cs
                         foodCost = 120;
                     }
 
+                    // Calculate total cost
+                    totalCost = fuelCost + foodCost;
+
+
+
                 }
     }
 }
