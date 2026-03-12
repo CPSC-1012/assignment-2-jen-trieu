@@ -37,7 +37,16 @@ namespace RoadTripCalculator.cs
             // Generate gas price once
             gasPrice = random.Next(140, 201) / 100.0;
 
+            // Repeat the calculations until the user quits
+            do
+            {
+                try
+                {
+                    // Ask user for trip distance
+                    Console.Write("Enter trip distance in km: ");
+                    distanceKm = int.Parse(Console.ReadLine());
 
+                    
         }
     }
 }
