@@ -100,9 +100,14 @@ namespace RoadTripCalculator.cs
                     Console.WriteLine("Invalid input. Please enter valid numbers.");
                 }
 
+                // Ask the user if they want another calculation
+                Console.Write("\nWould you like to calculate another trip? (y/n): ");
+                again = Console.ReadLine();
 
+            } while (again == "y");
 
-
-            }
+            Console.WriteLine("Program ended.");
+            Console.ReadKey();
+        }
     }
 }
