@@ -60,6 +60,29 @@ namespace RoadTripCalculator.cs
                         fuelEfficiency = FRIEND_FUEL_EFFICIENCY;
                     }
 
+                    // Calculate fuel used
+                    fuelUsed = (distanceKm / 100.0) * fuelEfficiency;
+
+                    // Calculate fuel cost
+                    fuelCost = fuelUsed * gasPrice;
+
+                    // Determine the snack cost based on distance
+                    if (distanceKm < 200)
+                    {
+                        foodCost = 30;
+                    }
+                    else if (distanceKm <= 499)
+                    {
+                        foodCost = 50;
+                    }
+                    else if (distanceKm <= 999)
+                    {
+                        foodCost = 80;
+                    }
+                    else
+                    {
+                        foodCost = 120;
+                    }
 
                 }
     }
