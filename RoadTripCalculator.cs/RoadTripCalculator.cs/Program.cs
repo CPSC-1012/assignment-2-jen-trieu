@@ -87,8 +87,22 @@ namespace RoadTripCalculator.cs
                     // Calculate total cost
                     totalCost = fuelCost + foodCost;
 
-
-
+                    // Display results
+                    Console.WriteLine($"\nGas price per L: ${gasPrice:F2}");
+                    Console.WriteLine($"Fuel used: {fuelUsed:F2} L");
+                    Console.WriteLine($"Fuel cost: ${fuelCost:F2}");
+                    Console.WriteLine($"Food cost: ${foodCost:F2}");
+                    Console.WriteLine($"Total trip cost: ${totalCost:F2}");
                 }
+                catch
+                {
+                    // Handle invalid input
+                    Console.WriteLine("Invalid input. Please enter valid numbers.");
+                }
+
+
+
+
+            }
     }
 }
