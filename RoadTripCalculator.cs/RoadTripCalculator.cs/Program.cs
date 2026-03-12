@@ -17,6 +17,7 @@ namespace RoadTripCalculator.cs
         // Constant fuel efficiencies
         const double YOUR_FUEL_EFFICIENCY = 11.9;
         const double FRIEND_FUEL_EFFICIENCY = 8.7;
+        private static double gasPrice;
 
         static void Main(string[] args)
         {
@@ -29,6 +30,14 @@ namespace RoadTripCalculator.cs
             int foodCost;
             double totalCost;
             string again;
+
+            // Random number generator
+            Random random = new Random();
+
+            // Generate gas price once
+            gasPrice = random.Next(140, 201) / 100.0;
+
+
         }
     }
 }
